@@ -207,15 +207,14 @@ a:hover{
     align-items: center;
     justify-content: center;
     width: 35vw;
-    height: 12vh;
+    height: 15vh;
     border-right: solid 1px white;
 }
 
 .separador img{
     scale: 0.35;
-    right: 15px;
     position: relative;
-    right: -170px;
+    right: -130px;
 }
 
 .separador button{
@@ -274,7 +273,7 @@ a:hover{
 }
 .separador4 .redes, .iconosRedes{
     position: relative;
-    left: -100px;
+    left: -40px;
 } 
 
 
@@ -371,7 +370,7 @@ a:hover{
     .cajaSeparador{
         height: 60vh;
         flex-wrap: wrap;
-        
+
     }
 
 
