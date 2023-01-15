@@ -1,0 +1,385 @@
+/* Normalize */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; /* Elimina el subrayado */
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+@keyframes entradaPorIzquierda{
+    0%{
+        transform: translateX(-200px);
+        scale: 0.7;
+    }
+    100%{
+        transform: translateX(0px);
+        scale: 1;
+    }
+}
+.encabezado{
+    background-color: #fd611a;  
+}
+.encabezado .imagenResponsive{
+    display: none;
+}
+
+
+
+.barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+    gap: 60px;
+}
+
+.logoContenedor{
+    animation-name: entradaPorIzquierda;
+    animation-duration: 2s;
+}
+
+.busquedaContenedor{
+    position: relative;
+}
+.busquedaContenedor input{
+    padding: 14px 400px ;
+    padding-left: 10px;
+    border-radius: 7px;
+    border: none;
+    border: 1px #E0E0E0 solid;
+}
+.busquedaContenedor i{
+    position: absolute;
+    top: 16px;
+    right: 12px;
+}
+
+.iniciarSesion button{
+    background-color: #fd611a;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #FFEEE7;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    padding: 5px 15px ;
+    font-family: 'Montserrat', sans-serif;
+}
+.iniciarSesion i{
+    font-size: 20px;
+} 
+
+.irAlCarrito{
+    font-size: 25px;
+    right: 30px;
+    top: 3px;
+}
+.irAlCarrito span{
+    background-color: rgb(226, 47, 47);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 80px;
+    line-height: 0px;
+    color: white;
+    display: flex;
+    justify-content: center; /* Centro el eje X a 0 */
+    align-items: center; /* Centro el eje Y a 0 */
+    position: absolute;
+    top: -5px; /* muevo hacia arriba */
+    left: 15px; /* muevo hacia la derecha */
+}
+.irAlCarrito{
+    position: relative;
+}
+.btnHamburguer{
+    font-size: 18px;
+    display: none;
+}
+
+
+
+.navegador{
+    background-color: #fd611a;
+    font-family: sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+
+a{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blanchedalmond;
+    transition: all 0.7s ease;
+    cursor: pointer;
+}
+
+
+.contenedorCarrousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carousel {
+    width: 89vw;
+} 
+
+
+
+.carta{
+    box-shadow: 0px 2px 5px rgb(109, 109, 109);
+    padding: 16px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1px;
+    border-radius: 5px;
+}
+.carta img{
+    width: 120px;
+}
+.carta h3{
+    font-size: 0.9rem;
+    text-align: center;
+}
+.carta p{
+    color: #4675b9;
+}
+
+.cartasContenedor{
+    display: flex;
+    justify-content: space-between; /* Separación en las puntas */
+    flex-wrap: wrap;
+}
+.seccionProductos{
+    margin: 10vh 5vw;
+}
+.novedades{
+    border-bottom: black 2px solid;
+}
+
+
+
+@keyframes movimientoMarcas{
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.marcasContenedor{
+    display: flex;
+    justify-content: space-between;
+    animation-name: movimientoMarcas;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.marcas{
+    scale: 1.3;
+    margin-bottom: 20px;
+}
+
+
+
+.cajaSeparador{
+    background-color: #fd611a;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.separador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+    height: 12vh;
+    border-right: solid 1px white;
+}
+
+.separador img{
+    scale: 0.35;
+    right: 15px;
+    position: relative;
+    right: -170px;
+}
+
+.separador button{
+    background-color:transparent;
+    color: white;
+    border-radius: 7px;
+    border-color: white;
+    padding: 5px 10px ;
+    font-size: 18px;
+}
+.separador button:hover{
+    background-color: white;
+    color: #fd611a;
+}
+
+.separador2, .separador3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.letraGrande{
+    font-size: 25px;
+
+}
+.letraChica{
+    font-size: 15px;
+    font-weight:100;
+    position: relative;
+    top:-15px;
+}
+.Boton{
+    position: relative;
+    top:-20px;
+}
+
+.separador3 h4{
+    text-decoration: underline white;
+    font-weight: bolder;
+    font-size: 18px;
+    font-weight: 100;
+}
+.separador3 h4:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.separador4{
+    margin-right: 150px;
+}
+.separador4 i{
+    font-size: 40px;
+    cursor: pointer;
+}
+.separador4 h4{
+    font-size: 20px;
+}
+.separador4 .redes, .iconosRedes{
+    position: relative;
+    left: -100px;
+} 
+
+
+
+
+.info{
+    background-color: #eee;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+}
+.infoTexto{
+    display: block;
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 320px) {
+
+    header {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .encabezado .imagenFull{
+        display: none;
+    }
+    .encabezado .imagenResponsive{
+        display: block;
+    }
+
+    .barra{
+        display: flex;
+        flex-direction: column; 
+    } 
+    .logoContenedor{
+        animation-name: entradaPorIzquierda;
+        animation-duration: 2s;
+    }
+    .busquedaContenedor{
+        position: relative;
+        top: -50px;
+    }
+    .busquedaContenedor input{
+        padding: 14px 60px ;
+        padding-left: 15px;
+        border-radius: 7px;
+        border: none;
+        border: 1px #E0E0E0 solid;
+    }
+    .busquedaContenedor i{
+        position: absolute;
+        top: 16px;
+        right: 12px;
+    }
+    .iniciarSesion{
+        position: relative;
+        top: -90px;
+        left: -30px;
+    }
+    .irAlCarrito{
+        position: relative;
+        top: -185px;
+        left: 100px;
+    }
+
+    .navegador{
+        position: relative;
+        top: -200px;
+    }
+    nav a{
+        display: none;
+    }
+    nav .btnHamburguer{
+        display: block;
+        border: #fd611a;
+        background-color: #fd611a;
+        position: relative;
+        left: -130px;
+    }
+
+    .contenedorCarrousel{
+        position: relative;
+        top: -180px;
+        height: 1vh;
+    }
+    
+    .seccionProductos{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .cajaSeparador{
+        height: 60vh;
+        flex-wrap: wrap;
+        
+    }
+
+
+
+
+    .infoTexto{
+        font-size: 10px;
+    }
+
+
+}
