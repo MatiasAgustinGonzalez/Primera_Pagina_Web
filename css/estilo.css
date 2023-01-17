@@ -8,6 +8,10 @@
 }
 
 
+body{
+    overflow-x:hidden; /* Scroll horizontal lo oculta */
+}
+
 
 @keyframes entradaPorIzquierda{
     0%{
